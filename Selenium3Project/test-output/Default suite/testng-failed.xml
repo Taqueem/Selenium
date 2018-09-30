@@ -6,7 +6,7 @@
       <class name="learnParallel.TestClassA">
         <methods>
           <include name="setupTest"/>
-          <include name="tearDown"/>
+          <include name="testMethod1"/>
           <include name="testMethod2"/>
         </methods>
       </class> <!-- learnParallel.TestClassA -->

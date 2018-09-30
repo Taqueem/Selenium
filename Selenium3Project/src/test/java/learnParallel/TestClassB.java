@@ -1,5 +1,6 @@
 package learnParallel;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import easy.util.TestBase;
 public class TestClassB extends TestBase {

@@ -12,6 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+       <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 <dependencies>
  <!-- https://mvnrepository.com/artifact/org.testng/testng -->
@@ -21,6 +23,14 @@
     <version>6.14.3</version>
     <scope>test</scope>
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.8.0</version>
+</dependency>
+
 
 
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->

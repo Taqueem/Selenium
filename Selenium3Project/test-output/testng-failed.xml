@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" name="CheckParallel1(failed)">
-    <parameter name="browser" value="ie"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="learnParallel.TestClassA">
         <methods>
           <include name="setupTest"/>
           <include name="testMethod1"/>
-          <include name="tearDown"/>
           <include name="testMethod2"/>
         </methods>
       </class> <!-- learnParallel.TestClassA -->
-      <class name="learnParallel.TestClassB">
-        <methods>
-          <include name="testMethod4"/>
-          <include name="setupTest"/>
-          <include name="tearDown"/>
-          <include name="testMethod3"/>
-        </methods>
-      </class> <!-- learnParallel.TestClassB -->
     </classes>
-  </test> <!-- CheckParallel1(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

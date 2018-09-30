@@ -1,6 +1,4 @@
 package easy.util;
-import static org.testng.Assert.assertTrue;
-
 import java.lang.reflect.Method;
 
 import org.openqa.selenium.Capabilities;
@@ -17,6 +15,7 @@ import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.internal.ElementScrollBehavior;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -25,6 +24,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
 public class BaseUtils {
@@ -96,6 +96,7 @@ public class BaseUtils {
 		return data;
 	}
 
+	@Test
 	protected void testSetup(String browser) {
 
 		if (driver == null)
@@ -122,7 +123,7 @@ public class BaseUtils {
 		else if (browser.equalsIgnoreCase(Enums.Browser.IE.getBrowser()))
 			return setIEBrowser();
 		else {
-			assertTrue(false, "Please pass a browser Name");
+			Assert.assertTrue(false, "Please pass a browser Name");
 			return null;
 		}
 	}

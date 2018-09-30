@@ -1,36 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-09-26T18:44:40Z" name="Suite" finished-at="2018-09-26T18:44:46Z" duration-ms="6276">
+  <suite started-at="2018-09-30T11:14:18Z" name="Default suite" finished-at="2018-09-30T11:14:21Z" duration-ms="3347">
     <groups>
     </groups>
-    <test started-at="2018-09-26T18:44:40Z" name="CheckParallel1" finished-at="2018-09-26T18:44:44Z" duration-ms="3428">
-      <class name="learnParallel.TestClassA">
-        <test-method is-config="true" signature="setupTest(java.lang.String)[pri:0, instance:learnParallel.TestClassA@73e22a3d]" started-at="2018-09-26T18:44:40Z" name="setupTest" finished-at="2018-09-26T18:44:44Z" duration-ms="3390" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ie]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="testMethod1()[pri:0, instance:learnParallel.TestClassA@73e22a3d]" started-at="2018-09-26T18:44:44Z" name="testMethod1" finished-at="2018-09-26T18:44:44Z" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod1 -->
-        <test-method signature="testMethod2()[pri:0, instance:learnParallel.TestClassA@73e22a3d]" started-at="2018-09-26T18:44:44Z" name="testMethod2" finished-at="2018-09-26T18:44:44Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod2 -->
-      </class> <!-- learnParallel.TestClassA -->
-    </test> <!-- CheckParallel1 -->
-    <test started-at="2018-09-26T18:44:40Z" name="CheckParallel2" finished-at="2018-09-26T18:44:46Z" duration-ms="6276">
+    <test started-at="2018-09-30T11:14:18Z" name="Default test" finished-at="2018-09-30T11:14:21Z" duration-ms="3347">
       <class name="learnParallel.TestClassB">
-        <test-method is-config="true" signature="setupTest(java.lang.String)[pri:0, instance:learnParallel.TestClassB@d5b810e]" started-at="2018-09-26T18:44:40Z" name="setupTest" finished-at="2018-09-26T18:44:46Z" duration-ms="6251" status="PASS">
+        <test-method is-config="true" signature="setupTest(java.lang.String)[pri:0, instance:learnParallel.TestClassB@1de5f259]" started-at="2018-09-30T11:14:18Z" name="setupTest" finished-at="2018-09-30T11:14:21Z" duration-ms="3211" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +18,83 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="testMethod3()[pri:0, instance:learnParallel.TestClassB@d5b810e]" started-at="2018-09-26T18:44:46Z" name="testMethod3" finished-at="2018-09-26T18:44:46Z" duration-ms="7" status="PASS">
+        <test-method signature="testMethod3()[pri:0, instance:learnParallel.TestClassB@1de5f259]" started-at="2018-09-30T11:14:21Z" name="testMethod3" finished-at="2018-09-30T11:14:21Z" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod3 -->
-        <test-method signature="testMethod4()[pri:0, instance:learnParallel.TestClassB@d5b810e]" started-at="2018-09-26T18:44:46Z" name="testMethod4" finished-at="2018-09-26T18:44:46Z" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:learnParallel.TestClassB@1de5f259]" started-at="2018-09-30T11:14:21Z" name="tearDown" finished-at="2018-09-30T11:14:21Z" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testMethod4()[pri:0, instance:learnParallel.TestClassB@1de5f259]" started-at="2018-09-30T11:14:21Z" name="testMethod4" finished-at="2018-09-30T11:14:21Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod4 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:learnParallel.TestClassB@1de5f259]" started-at="2018-09-30T11:14:21Z" name="tearDown" finished-at="2018-09-30T11:14:21Z" duration-ms="16" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'PERSONAL', ip: '192.168.43.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 55.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2164, moz:profile: C:\Users\Personal\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: dcffded8-971d-4f04-ad29-2ae98e9d63dc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'PERSONAL', ip: '192.168.43.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 55.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2164, moz:profile: C:\Users\Personal\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: dcffded8-971d-4f04-ad29-2ae98e9d63dc
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
+at easy.util.TestBase.tearDown(TestBase.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- learnParallel.TestClassB -->
-    </test> <!-- CheckParallel2 -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

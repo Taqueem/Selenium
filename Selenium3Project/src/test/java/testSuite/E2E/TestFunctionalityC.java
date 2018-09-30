@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import easy.util.BaseUtils;
 public class TestFunctionalityC extends BaseUtils {
 
+	@Override
 	@BeforeTest
 	@Parameters("browser")
 	public void beforeTest(String browser) {
