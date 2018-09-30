@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testSuite.E2E.TestFunctionalityA">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="test1"/>
+          <include name="test3"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testSuite.E2E.TestFunctionalityA -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" parallel="tests" name="FifefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testSuite.E2E.TestFunctionalityA">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="test1"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testSuite.E2E.TestFunctionalityA -->
+    </classes>
+  </test> <!-- FifefoxTest(failed) -->
+  <test thread-count="5" parallel="tests" name="IE test(failed)">
+    <parameter name="browser" value="ie"/>
+    <groups>
+      <run>
+        <include name="bugFixes"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testSuite.E2E.TestFunctionalityA">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="test1"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testSuite.E2E.TestFunctionalityA -->
+    </classes>
+  </test> <!-- IE test(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

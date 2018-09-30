@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AnySuiteName" parallel="none">
+<listeners>
+<listener class-name="listeners.TestListener"></listener>
+</listeners>
+ <test name="AnyTestName">
+ 	<parameter name="browser" value="chrome" />
+ <groups>
+ <run>
+ <include name = "sanity"/>
+ </run>
+ </groups>
+ 	<classes>
+		<class name="testSuite.E2E.TestFunctionalityA"/>
+ 		<class name="testSuite.E2E.TestFunctionalityB"/>
+ 	</classes>
+ 	
+ </test>
+
+</suite>

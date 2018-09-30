@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [ParallelTests]">
+  <test thread-count="5" parallel="tests" name="CheckParallel(failed)">
+    <classes>
+      <class name="testSuite.E2E.TestFunctionalityC">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="test7"/>
+          <include name="test8"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testSuite.E2E.TestFunctionalityC -->
+      <class name="testSuite.E2E.TestFunctionalityA">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="test1"/>
+          <include name="test3"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testSuite.E2E.TestFunctionalityA -->
+      <class name="testSuite.E2E.TestFunctionalityB">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="test6"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testSuite.E2E.TestFunctionalityB -->
+    </classes>
+  </test> <!-- CheckParallel(failed) -->
+</suite> <!-- Failed suite [ParallelTests] -->

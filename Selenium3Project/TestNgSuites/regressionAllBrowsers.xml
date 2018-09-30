@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RegressionSuite" parallel="tests">
+
+<listeners>
+<listener class-name="listeners.TestListener"></listener>
+</listeners>
+ 	<test name="ChromeTest">
+ 		<parameter name="browser" value="chrome" />
+ 		<groups>
+ 			<run>
+ 				<include name = "sanity"/>
+ 			</run>
+ 		</groups>
+ 			<classes>
+				<class name="testSuite.E2E.TestFunctionalityA"/>
+ 				<class name="testSuite.E2E.TestFunctionalityB"/>
+ 			</classes>	
+ 	</test>
+ 	
+ 	 <test name="FifefoxTest">
+ 		<parameter name="browser" value="firefox" />
+ 		<groups>
+ 			<run>
+ 				<include name = "smoke"/>
+ 			</run>
+ 		</groups>
+ 			<classes>
+				<class name="testSuite.E2E.TestFunctionalityA"/>
+ 				<class name="testSuite.E2E.TestFunctionalityB"/>
+ 			</classes>	
+ 	</test>
+ 	
+ 	<test name="IE test">
+ 		<parameter name="browser" value="ie" />
+ 		<groups>
+ 			<run>
+ 				<include name = "bugFixes"/>
+ 			</run>
+ 		</groups>
+ 			<classes>
+				<class name="testSuite.E2E.TestFunctionalityA"/>
+ 				<class name="testSuite.E2E.TestFunctionalityB"/>
+ 			</classes>	
+ 	</test>
+
+</suite>

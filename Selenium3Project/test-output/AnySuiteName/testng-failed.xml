@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AnySuiteName]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="AnyTestName(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testSuite.E2E.TestFunctionalityA">
+        <methods>
+          <include name="afterTest"/>
+          <include name="test1"/>
+          <include name="test3"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testSuite.E2E.TestFunctionalityA -->
+    </classes>
+  </test> <!-- AnyTestName(failed) -->
+</suite> <!-- Failed suite [AnySuiteName] -->

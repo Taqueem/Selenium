@@ -1,0 +1,12 @@
+<suite name="AnySuiteName" parallel="none">
+
+ <test name="AnyTestName">
+ 
+ 	<classes>
+		<class name="testNGTests.BeforetestandBeforemethod"/>
+ 		<class name="testNGTests.MultiBrowser"/>
+ 	</classes>
+ 	
+ </test>
+
+</suite>
