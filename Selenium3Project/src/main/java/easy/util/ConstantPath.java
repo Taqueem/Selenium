@@ -16,4 +16,6 @@ public class ConstantPath {
 	public static final String	pathScreenshots		= "D:\\Selenium\\ScreenShots\\";
 
 	public static final String	pathExtentReports	= "D:\\Selenium\\ExtentReports\\";
+
+	String						anc					= "abc";
 }

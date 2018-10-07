@@ -15,4 +15,6 @@ public class ConfigFile {
 	public static final String	googleURL		= "Http://google.com";
 
 	public static final String	yahooUrl		= "Http://yahoo.in";
+
+	private static String		abc				= "bac";
 }
