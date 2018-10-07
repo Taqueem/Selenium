@@ -2,7 +2,7 @@
 <suite thread-count="2" name="Suite" parallel="tests">
 
  <test name="CheckParallel1">
- <parameter name="browser" value="ie" />
+ <parameter name="browser" value="chrome" />
  	<classes>
 		<class name="learnParallel.TestClassA"/>
  	</classes>
